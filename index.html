@@ -1,48 +1,48 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
     <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css"
-         rel="stylesheet" />
-
-        <link rel="stylesheet" href="style.css" />
-        <title>Deepak Sharma | Travel Moments</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>calculator using javascript - deepak sharma</title>
+        <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <nav>
-            <ul class="nav_links">
-                <li class="link"><a href="#">HOME</a></li>
-                <li class="link"><a href="#">ABOUT US</a></li>
-                <li class="link"><a href="#">E-TICKET</a></li>
-                <li class="link"><a href="#">JOURNEY</a></li>
-                <li class="link"><a href="#">CONTACT</a></li>
-            </ul>
-        </nav>
 
         <div class="container">
-            <div class="container_left">
-                <div class="left_content">
-                    <h4>Best guide for you</h4>
-                    <p>Our team of experts has secoured collection of handpicked destination and insider tips to ensure your journey is extraordinary.</p>
-                </div>
-            </div>
-            <div class="container_right">
-                <img src="/women.png" alt="women">
-                <div class="right_content">
-                    <h1>ENJOY</h1>
-                    <h4>Travelling moment</h4>
-                    <p>Welcome to our travel website, where we pride ourselves on being the best guide for you in your wanderlust adventures. whether you're seeking sun-soaked beaches, or thrilling outdoor escapades, we've got you covered.</p>
-                    <div class="action_btns">
-                        <button class="btn primary_btn">Explore</button>
-                        <button class="btn secondary_btn">See More</button>
+            <div class="calculator">
+                <form>
+                    <div class="display">
+                        <input type="text" name="display">
                     </div>
-                    <div class="socials">
-                        <span><i class="ri-instagram-line"></i></span>
-                        <span><i class="ri-twitter-fill"></i></span>
-                        <span><i class="ri-facebook-fill"></i></span>
+                    <div>
+                        <input type="button" value="AC" onclick="display.value = '' " class="operator">
+                        <input type="button" value="DE" onclick="display.value = display.value.toString().slice(0,-1)">
+                        <input type="button" value="." onclick="display.value += '.' " class="operator">
+                        <input type="button" value="/" onclick="display.value += '/' " class="operator">
                     </div>
-                </div>
+                    <div>
+                        <input type="button" value="7" onclick="display.value += '7' ">
+                        <input type="button" value="8" onclick="display.value += '8' ">
+                        <input type="button" value="9" onclick="display.value += '9' ">
+                        <input type="button" value="*" onclick="display.value += '*' " class="operator">
+                    </div>
+                    <div>
+                        <input type="button" value="4" onclick="display.value += '4' ">
+                        <input type="button" value="5" onclick="display.value += '5' ">
+                        <input type="button" value="6" onclick="display.value += '6' ">
+                        <input type="button" value="-" onclick="display.value += '-' " class="operator">
+                    </div>
+                    <div>
+                        <input type="button" value="1" onclick="display.value += '1' ">
+                        <input type="button" value="2" onclick="display.value += '2' ">
+                        <input type="button" value="3" onclick="display.value += '3' ">
+                        <input type="button" value="+" onclick="display.value += '+' " class="operator">
+                    </div>
+                    <div>
+                        <input type="button" value="00" onclick="display.value += '00' ">
+                        <input type="button" value="0" onclick="display.value += '0' ">
+                        <input type="button" value="=" onclick="display.value = eval(display.value)" class="equal operator">
+                    </div>
+                </form>
             </div>
         </div>
     </body>
