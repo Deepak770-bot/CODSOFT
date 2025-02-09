@@ -1,49 +1,126 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
+        <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>calculator using javascript - deepak sharma</title>
+        <title>document</title>
         <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     </head>
     <body>
+        <nav>
+            <input type="checkbox" class="checkbox" id="check">
+            <h1 class="nav_head">Deepak.</h1>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#service">Service</a></li>
+                <li><a href="#project">Project</a></li>
+                <li><a href="#contact">Contact</a></li>
 
-        <div class="container">
-            <div class="calculator">
-                <form>
-                    <div class="display">
-                        <input type="text" name="display">
+                <a href="#contact"><button class="contact_btn">Contact Me</button></a>
+            </ul>
+            <label for="check" class="checkbtn">
+                <i class="fas fa-bars"></i>
+            </label>
+        </nav>
+
+        <section id="home" class="home">
+            <img src="./deep.jpg" alt="" width="450px" height="400px">
+            <div class="description">
+                <h1>Hello I'm  <br><span>Deepak Sharma</span></h1>
+                <h2>I'm a <span>Web Developer...</span></h2>
+                <p>i am deepak sharma from alwar but currently leaving in jaipur my pursuing in BCA from parishkar collage of global excellence jaipur.</p>
+                <div class="font">
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-facebook-f"></i>
+                    <i class="fa-brands fa-linkedin-in"></i>
+                    <i class="fas fa-phone"></i>
+                </div>
+                <a href="resume.pdf" class="resume-button" download>Download resume</a>
+            </div>
+        </section>
+
+
+        <section id="about" class="about">
+            <div class="about_section">
+                <h1>About <span>Me</span></h1>
+                <h2>Web <span>Developer</span></h2>
+                <p>i am Deepak sharma from alwar but currently leaving in jaipur my pursuing in BCA from parishkar collage of global excellence jaipur.</p>
+                <button class="about_btn">Read More..</button>
+            </div>
+            <div class="about_photo">
+                <img src="./IMG_20240802_124849.jpg" alt="" width="420px" height="360px">
+            </div>
+        </section>
+
+        <section id="service">
+            <h1 class="service_section">My <span>Services</span></h1>
+            <div class="card">
+                <div class="service_card">
+                    <i class="fas fa-computer"></i>
+                    <h2>Graphic Design</h2>
+                    <p>Highly motivated and detail-oriented professional with strong Web development Skill.Experience in Graphic Design and UI/UX design.Adept at problem-solving.teamwork.and adapting to fast-paced environments and my skill are improved with codsoft.</p>
+                    <a href="#">Read More...</a>
+                </div>
+                <div class="service_card">
+                    <i class="fas fa-computer"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>details-oriented professional with strong Web development Skill.Beginner in UI/UX.Adept at problem-solving.teamwork.and adapting to fast-paced environments and my skill are improved with codsoft.</p>
+                    <a href="#">Read More...</a>
+                </div>
+                <div class="service_card">
+                    <i class="fas fa-computer"></i>
+                    <h2>Frontend Developer</h2>
+                    <P>details-oriented professional with strong Web development Skill.Beginner in Frontend Developer.Adept at problem-solving.teamwork.and adapting to fast-paced environments.</P>
+                    <a href="#">Read More...</a>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="project">
+            <h1 class="proj_section">My <span>Work</span></h1>
+            <div class="project">
+                <div class="proj_card">
+                    <img src="./web-project new1.webp" alt="" width="350px" height="350px">
+                    <div class="content">
+                        <h1>Web Development</h1>
+                        <p>A Sleek and intuitive task management application that helps users organize their daily activities efficiently.Features include task creation,categorization,due dates,and a drag-and drop interface for easy task management.</p>
                     </div>
-                    <div>
-                        <input type="button" value="AC" onclick="display.value = '' " class="operator">
-                        <input type="button" value="DE" onclick="display.value = display.value.toString().slice(0,-1)">
-                        <input type="button" value="." onclick="display.value += '.' " class="operator">
-                        <input type="button" value="/" onclick="display.value += '/' " class="operator">
+                </div>
+                <div class="proj_card">
+                    <img src="./android design 2.jpeg" alt="" width="350px" height="350px">
+                    <div class="content">
+                        <h1>Android Design</h1>
+                        <p>This project focuses on implementing a flexible and efficient sorting system within and android application.The feature allows users to organize list,such as contact,products,or file,based on various criteria like name,data,price.</p>
                     </div>
-                    <div>
-                        <input type="button" value="7" onclick="display.value += '7' ">
-                        <input type="button" value="8" onclick="display.value += '8' ">
-                        <input type="button" value="9" onclick="display.value += '9' ">
-                        <input type="button" value="*" onclick="display.value += '*' " class="operator">
+                </div>
+                <div class="proj_card">
+                    <img src="./graphic 1.jpeg" alt="" width="350px" height="350px">
+                    <div class="content">
+                        <h1>Graphic Design</h1>
+                        <p>Graphic design skills are various artistics and creative skills and abilities you may need to excle in a graphic design role.</p>
                     </div>
-                    <div>
-                        <input type="button" value="4" onclick="display.value += '4' ">
-                        <input type="button" value="5" onclick="display.value += '5' ">
-                        <input type="button" value="6" onclick="display.value += '6' ">
-                        <input type="button" value="-" onclick="display.value += '-' " class="operator">
-                    </div>
-                    <div>
-                        <input type="button" value="1" onclick="display.value += '1' ">
-                        <input type="button" value="2" onclick="display.value += '2' ">
-                        <input type="button" value="3" onclick="display.value += '3' ">
-                        <input type="button" value="+" onclick="display.value += '+' " class="operator">
-                    </div>
-                    <div>
-                        <input type="button" value="00" onclick="display.value += '00' ">
-                        <input type="button" value="0" onclick="display.value += '0' ">
-                        <input type="button" value="=" onclick="display.value = eval(display.value)" class="equal operator">
-                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <div class="form">
+                <h1>Contact <span>Me</span></h1>
+                <form action="#home">
+                    <input type="text" name="name" placeholder="Deepak Sharma" required=""><br>
+                    <input type="email" name="email" placeholder="2002panditdeepak@gmail.com" required=""><br>
+                    <input type="number" name="mno" placeholder="8740013406" required=""><br>
+                    <textarea name="msg" id="msg" rows="6" cols="20" placeholder="Reach Out to me!..."></textarea><br>
+                    <button class="form_btn">Submit</button>
                 </form>
             </div>
+        </section>
+
+        <div class="footer">
+            <p><i class="fa-solid fa-copyright"></i> Deepak sharma || All Rights Reserved...</p>
         </div>
     </body>
 </html>
